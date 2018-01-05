@@ -1,8 +1,4 @@
 <?php
-    function carregaClasse($nomeDaClasse){
-        require_once("class/".$nomeDaClasse.".php");
-    }
-    spl_autoload_register("carregaClasse");
-    
+    require __DIR__ . '/vendor/autoload.php';
     require_once("class/config.php");
 ?>
